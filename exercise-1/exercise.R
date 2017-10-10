@@ -28,9 +28,12 @@ early.meals <- meals["breakfast", "lunch"]
 ### Bonus ###
 # Create a list that has the number of items you ate for each meal
 # Hint: use the `lappy()` function
-
+number.of.items <- lapply(meals, length)
 
 # Write a function that adds pizza to every meal
-
+AddPizza <- function(list) {
+  return (c(list, "pizza"))
+}
 
 # Add pizza to every meal!
+lapply(meals, AddPizza)
